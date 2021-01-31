@@ -2,81 +2,141 @@
 <html lang="en">
 
 <head>
+
+    <title>Wayove Technologies Pvt. Ltd.</title>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wayove Technologies Pvt. Ltd.</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bd-coming-soon.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/eye.css">
     <link rel="icon" href="assets/images/fav.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="assets/images/fav.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
 </head>
 
 
 <script>
-// When the user scrolls down 20px from the top of the document, slide down the navbar
-window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    
-    document.getElementById("navbar").style.top = "0";
-
-    document.getElementById("wave").style.opacity = document.getElementById("wave").style.opacity-0.1;
-    document.getElementById("wave_2").style.opacity = document.getElementById("wave").style.opacity-0.1;
-    
-  } 
-
-  else {
-    
-    document.getElementById("wave").style.opacity = "1";
-    document.getElementById("wave_2").style.opacity = "1";
-    document.getElementById("navbar").style.top = "-50px";
-  }
-}
+    function scrollFunction() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        document.getElementById("navbar").style.top = "0";
+        document.getElementById("wave").style.opacity = document.getElementById("wave").style.opacity-0.1;
+        document.getElementById("wave_2").style.opacity = document.getElementById("wave").style.opacity-0.1;
+        
+      }
+      else {
+        document.getElementById("wave").style.opacity = "1";
+        document.getElementById("wave_2").style.opacity = "1";
+        document.getElementById("navbar").style.top = "-60px";
+      }
+    }
 </script>
 
 
 <body >
 
+  <!-- DASHBOARD -->
+  <section id="dashboard">
 
-<section style="height: 120%;background: #fff;">
-    <div class="logo">
-        <img src="assets/images/logo.png" alt="logo" class="logo"/>
-        <h6 style="color: #015871;margin-top: 130px;opacity: 0.6">PEACEFUL MINDS AT WORK</h6>
-    </div>
-    <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#about"></a>
-    <div class="ocean">
-        <div id="wave"></div>
-        <div id="wave_2"></div>
-    </div>
-</section>
+      <div class="logo">
+          <img src="assets/images/logo.png" alt="logo" class="logo"/>
+          <h6 style="color: #015871;margin-top: 130px;opacity: 0.6">PEACEFUL MINDS AT WORK</h6>
+      </div>
+
+      <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#about"></a>
+      
+      <div class="ocean">
+          <div id="wave"></div>
+          <div id="wave_2"></div>
+      </div>
+
+  </section>
 
         
     
 
 
-<section style="background: #45B9B3;height: 108%;">
+<section id="about">
     
     <!-- Container (About Section) -->
-    <div id="about" class="container-fluid">
-      <div class="row">
-        <div class="col-sm-8">
-          <h2 style="color: #000;">BUILDING MOBILE & WEB APPLICATION</h2><br>
-          <h4 style="color: #000;width: 80%">Our journey is very short if we just have to portray ourself as a Tech Start-up. But we believe you would like to know more...</h4><br>
-          
+    <div class="row">
+
+        <div class="col-sm-6" style="text-align: justify;">
+          <img src="assets/images/who_art.png" alt="who" />
           
         </div>
-        <div class="col-sm-4">
-        	
-          <a href="#home"><img src="assets/images/remote_art.png" alt="logo" class="logo"  /></a>
+        <div class="col-sm-6" style="color: #0B5F60;margin-top: -20%;">
+          
+          <div style="background: #fff;padding: 10%;border-radius: 20px;">
+            <h3><b>WHO WE ARE?</b></h3>
+            <br>
+            <h6>Wayove was just a name discovered in 2017, brought to life as a tech start-up in 2021 to deliver quality product.</h6>
+            <br>
+            <h6>We are bunch of peaceful minds working remotely providing technical assistance and services. Our good management skills and smart work approach always keeps our value intact. Our resources are not cheap labor you were thinking of not hiring, but are worthy minds you would like to invest behind.</h6>
+            
+          </div>
+          <br>
+          <div style="background: #fff;padding: 10%;border-radius: 20px;">
+            <h3><b>WHAT WE DO?</b></h3>
+            <br>
+            <h6>We build native mobile applications for iOS and Android, alongside developing creative website on demand. Staying up-to-date with the technology and writing clean code for your application, we do undertake all responsibilities to deliver your ideal application on time.</h6>
+            
+          </div>
+          
         </div>
-      </div>
+        
     </div>
+
+</section>
+
+
+<section id="services" >
+    
+    <h3 style="text-align: center;margin-top: -20%"><b>SERVICES WE PROVIDE</b></h3>
+    <br><br><br>
+    <!-- Container (About Section) -->
+    <div class="row">
+        
+
+
+
+        <div class="col-sm-4" style="text-align: justify;">
+          <div style="background: #fff;padding: 10%;border-radius: 20px; box-shadow: 0px 0px 9px #aaaaaa;">
+            <h3><b>MOBILE DEVELOPMENT</b></h3>
+            <br>
+            <h6>Wayove was just a name discovered in 2017, brought to life as a tech start-up in 2021 to deliver quality product.</h6>
+            <br>
+            <h6>We are bunch of peaceful minds working remotely providing technical assistance and services. Our good management skills and smart work approach always keeps our value intact. Our resources are not cheap labor you were thinking of not hiring, but are worthy minds you would like to invest behind.</h6>
+            
+          </div>
+        </div>
+        <div class="col-sm-4" >
+          
+          <div style="background: #fff;padding: 10%;border-radius: 20px; box-shadow: 0px 0px 9px #aaaaaa;">
+            <h3><b>WEBSITE DEVELOPMENT</b></h3>
+            <br>
+            <h6>We build native mobile applications for iOS and Android, alongside developing creative website on demand. Staying up-to-date with the technology and writing clean code for your application, we do undertake all responsibilities to deliver your ideal application on time.</h6>
+            
+          </div>
+          
+        </div>
+
+        <div class="col-sm-4" >
+          
+          <div style="background: #fff;padding: 10%;border-radius: 20px; box-shadow: 0px 0px 9px #aaaaaa;">
+            <h3><b>MOBILE AND WEB DESIGN</b></h3>
+            <br>
+            <h6>We build native mobile applications for iOS and Android, alongside developing creative website on demand. Staying up-to-date with the technology and writing clean code for your application, we do undertake all responsibilities to deliver your ideal application on time.</h6>
+            
+          </div>
+          
+        </div>
+        
+    </div>
+
 </section>
 
 
@@ -86,12 +146,9 @@ function scrollFunction() {
 
 
 
-<div id="navbar">
-  <a href="#home"><img src="assets/images/logo_header.png" alt="logo" class="logo" style="" /></a>
-</div>
-
-
-
+  <div id="navbar">
+    <a href="#dashboard"><img src="assets/images/logo_header.png" alt="logo" class="logo" style="" /></a>
+  </div>
 
 </body>
 
