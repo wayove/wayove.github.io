@@ -21,15 +21,19 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.getElementById("navbar").style.top = "0";
-    document.getElementById("wave").style.top = "130%";
-    document.getElementById("wave_2").style.top = "130%";
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+		    document.getElementById("navbar").style.top = "0";
+		  } 
+    document.getElementById("wave").style.opacity = document.getElementById("wave").style.opacity-0.1;
+    document.getElementById("wave_2").style.opacity = document.getElementById("wave").style.opacity-0.1;
+    
   } 
+
   else {
     
-    document.getElementById("wave").style.top = "80%";
-    document.getElementById("wave_2").style.top = "78%";
+    document.getElementById("wave").style.opacity = "1";
+    document.getElementById("wave_2").style.opacity = "1";
     document.getElementById("navbar").style.top = "-50px";
   }
 }
