@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Wayove Technologies Pvt. Ltd.</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="javascript" href="assets/js/menu.js">
+    <link rel="icon" href="assets/images/fav.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/images/fav.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+</head>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        document.getElementById("navbar").style.top = "0";
+        document.getElementById("wave").style.opacity = document.getElementById("wave").style.opacity-0.1;
+        document.getElementById("wave_2").style.opacity = document.getElementById("wave").style.opacity-0.1;
+        
+      }
+      else {
+        document.getElementById("wave").style.opacity = "1";
+        document.getElementById("wave_2").style.opacity = "1";
+        document.getElementById("navbar").style.top = "-60px";
+      }
+    }
+</script>
+
+
+<body >
+
+<div class="FABMenu">
+  <input type="checkbox" checked/>
+  <div class="hamburger">
+    <div class="dots">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </div>
+  </div>
+  <div class="action_items_bar">
+    <div class="action_items">
+      <span class="first_item">
+        <i class="material-icons">
+        favorite
+        </i>
+      </span>
+      <span class="second_item">
+        <i class="material-icons">
+        chat
+        </i>
+      </span>
+      <span class="third_item">
+        <i class="material-icons">
+        get_app
+        </i>
+      </span>
+      <span class="fourth_item">
+        <i class="material-icons">
+        share
+        </i>
+      </span>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
